@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/btnhome">
+    <fragment
+        android:id="@+id/btnhome"
+        android:name="com.example.mercaaqui.productos.ListaProductoFragment"
+        android:label="fragment_lista_producto"
+        tools:layout="@layout/fragment_lista_producto" >
+        <action
+            android:id="@+id/action_listaProductoFragment_to_listaFacturaFragment3"
+            app:destination="@id/btnfactura" />
+    </fragment>
+    <fragment
+        android:id="@+id/btnfactura"
+        android:name="com.example.mercaaqui.facturas.ListaFacturaFragment"
+        android:label="fragment_lista_factura"
+        tools:layout="@layout/fragment_lista_factura" />
+</navigation>

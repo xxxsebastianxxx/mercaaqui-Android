@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardBackgroundColor="#477790"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_uno"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/shape_productos" />
+
+
+        <TextView
+            android:id="@+id/id_factura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="125dp"
+            android:text="000000000"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_toRightOf="@id/item_image"
+            android:layout_marginTop="16dp"
+            android:text="Producto: "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/nombre_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/producto"
+            android:layout_toRightOf="@id/producto"
+            android:text="Manzana"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/producto"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_toRightOf="@id/item_image"
+            android:text="Cantidad: "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cantidad_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/producto"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/cantidad"
+            android:layout_toRightOf="@id/cantidad"
+            android:text="50"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/precio_unitario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cantidad"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_toRightOf="@id/item_image"
+            android:text="Precio Unitario: "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/precio_unitario_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cantidad"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/precio_unitario"
+            android:layout_toRightOf="@id/precio_unitario"
+            android:text="1.000"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/precio_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precio_unitario"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_toRightOf="@id/item_image"
+            android:text="Precio Total: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/precio_total_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precio_unitario"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/precio_total"
+            android:layout_toRightOf="@id/precio_total"
+            android:text="50.000"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

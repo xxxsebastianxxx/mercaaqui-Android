@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnhome"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="#E41D1D"
+        android:title="Productos" />
+    <item
+        android:id="@+id/btnfactura"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_bag_24"
+        android:title="facturas"/>
+
+</menu>
