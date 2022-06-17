@@ -12,10 +12,18 @@
         <action
             android:id="@+id/action_listaProductoFragment_to_listaFacturaFragment3"
             app:destination="@id/btnfactura" />
+        <action
+            android:id="@+id/action_btnhome_to_detalleProductosFragment"
+            app:destination="@id/detalleProductosFragment" />
     </fragment>
     <fragment
         android:id="@+id/btnfactura"
         android:name="com.example.mercaaqui.facturas.ListaFacturaFragment"
         android:label="fragment_lista_factura"
         tools:layout="@layout/fragment_lista_factura" />
+    <fragment
+        android:id="@+id/detalleProductosFragment"
+        android:name="com.example.mercaaqui.productos.DetalleProductosFragment"
+        android:label="fragment_detalle_productos"
+        tools:layout="@layout/fragment_detalle_productos" />
 </navigation>

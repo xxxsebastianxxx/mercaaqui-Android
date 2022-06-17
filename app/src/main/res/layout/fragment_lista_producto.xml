@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".productos.ListaProductoFragment">
 
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,8 +18,7 @@
         android:textColor="@color/colorapp"
         android:textSize="25sp"
         android:fontFamily="sans-serif"
-        tools:ignore="MissingConstraints"
-        >
+        tools:ignore="MissingConstraints">
 
     </TextView>
 <ScrollView

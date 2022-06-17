@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.example.mercaaqui.R
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -40,7 +42,7 @@ class ListaProductoFragment : Fragment(), ProductosListener {
     ): View? {
         val ll = inflater.inflate(R.layout.fragment_lista_producto,container,false)
         //listaproductos=ArrayList<JSONObject>()
-        val url = "http://10.190.80.85/mercaaqui/listaProductoAll.php"
+        val url = "http://192.168.1.104/mercaaqui/listaProductoAll.php"
         val queue = Volley.newRequestQueue(this.context)
         Log.d("Mensaje","ingreso a class")
 
@@ -84,6 +86,10 @@ class ListaProductoFragment : Fragment(), ProductosListener {
     }
 
     override fun onProductosListenerClicked(productos: JSONObject, position: Int) {
-        TODO("Not yet implemented")
+        val bundle = bundleOf("productos" to productos.toString())
+        findNavController().navigate(
+            R.id.detalleProductosFragment,
+            bundle
+        )
     }
 }
