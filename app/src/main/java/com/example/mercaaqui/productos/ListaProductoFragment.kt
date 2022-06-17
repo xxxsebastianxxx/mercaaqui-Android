@@ -42,7 +42,7 @@ class ListaProductoFragment : Fragment(), ProductosListener {
     ): View? {
         val ll = inflater.inflate(R.layout.fragment_lista_producto,container,false)
         //listaproductos=ArrayList<JSONObject>()
-        val url = "http://192.168.1.104/mercaaqui/listaProductoAll.php"
+        val url = "https://mercaaqui.ga/productosAll"
         val queue = Volley.newRequestQueue(this.context)
         Log.d("Mensaje","ingreso a class")
 
