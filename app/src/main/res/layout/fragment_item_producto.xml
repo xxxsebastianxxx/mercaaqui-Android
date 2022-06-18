@@ -6,7 +6,7 @@
     android:background="@color/white"
     tools:context=".productos.ItemProductoFragment">
 
-    <!-- contenedor de todo -->
+    <!-- contenedor -->
 
     <LinearLayout
         android:layout_width="match_parent"

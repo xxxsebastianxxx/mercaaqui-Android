@@ -1,20 +1,14 @@
 package com.example.mercaaqui.adapter
 
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.example.mercaaqui.R
-import kotlin.collections.ArrayList
-import com.example.mercaaqui.model.productos
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import org.json.JSONArray
-import com.google.gson.annotations.SerializedName
-import com.google.gson.annotations.Expose
+import com.example.mercaaqui.R
 import org.json.JSONObject
 
 

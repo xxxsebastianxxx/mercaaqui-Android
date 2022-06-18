@@ -21,9 +21,9 @@
         tools:ignore="MissingConstraints">
 
     </TextView>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecyclerViewDeProductos"
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
         tools:listitem="@layout/fragment_item_producto"
         android:layout_marginTop="50dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-</ScrollView>
+    </ScrollView>
     <RelativeLayout
         android:id="@+id/rlproductos"
         android:layout_width="match_parent"
@@ -43,7 +43,6 @@
             android:layout_height="match_parent"
             android:alpha="0.5"
             android:background="@color/white">
-
         </View>
 
         <ProgressBar

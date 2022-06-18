@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
-            android:background="#adc3ba"
+            android:background="@color/colorapp"
             app:menu="@menu/bottom_navigation" />
 
 
